@@ -1,4 +1,4 @@
-package br.com.academia.domain.model.registrions;
+package br.com.academia.domain.model;
 
 import lombok.Builder;
 import lombok.Data;
@@ -11,11 +11,12 @@ import java.time.LocalDate;
 @Builder
 
 public class Profissional {
-    private int codigo;
+
+    private int codigoProfissional;
     private String cargo;
     private String escolaridade;
-    private LocalDate data_cadastro;
-    private LocalDate data_admissao;
-    private LocalDate data_demissao;
+    private LocalDate dataCadastro;
+    private LocalDate dataAdmissao;
+    private LocalDate dataDemissao;
     private String status;
 }
