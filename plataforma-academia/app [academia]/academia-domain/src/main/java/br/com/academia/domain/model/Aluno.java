@@ -4,13 +4,17 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.Getter;
 
+import java.time.LocalDate;
+
 @Getter
 @Data
 @Builder
 
-public class Telefone {
+public class Aluno {
 
-    private int codigo;
-    private String numero;
+    private int codigoAluno;
+    private String nomeResponsavel;
+    private LocalDate dataCadastroAluno;
     private String status;
+
 }

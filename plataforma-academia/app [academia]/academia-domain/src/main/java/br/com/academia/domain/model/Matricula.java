@@ -14,12 +14,12 @@ import java.time.LocalDate;
 public class Matricula {
 
     private int codigoMatricula;
-    private BigDecimal valorTotal;
-    private int desconto;
-    private LocalDate dataInicio;
+    private BigDecimal valorTotalMatricula;
+    private int descontoMatricula;
+    private LocalDate dataInicioMatricula;
     private LocalDate dataMatricula;
-    private LocalDate dataCancelamento;
+    private LocalDate dataCancelamentoMatricula;
     private String status;
-    private String motivoCancelamento;
-    private String status;
+    private String motivoCancelamentoMatricula;
+
 }

@@ -8,9 +8,9 @@ import lombok.Getter;
 @Data
 @Builder
 
-public class Telefone {
+public class GrupoExercicios {
 
-    private int codigo;
-    private String numero;
+    private int codigoGrupoExercicios;
+    private String descricaoGrupoExercicios;
     private String status;
 }
