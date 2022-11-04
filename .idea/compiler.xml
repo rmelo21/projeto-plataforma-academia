@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="academia-events" />
         <module name="academia-domain" />
         <module name="academia-application" />
       </profile>
@@ -15,12 +16,14 @@
       <module name="academia" target="11" />
       <module name="academia-application" target="11" />
       <module name="academia-domain" target="11" />
+      <module name="academia-events" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="academia-application" options="-parameters" />
       <module name="academia-domain" options="-parameters" />
+      <module name="academia-events" options="-parameters" />
     </option>
   </component>
 </project>

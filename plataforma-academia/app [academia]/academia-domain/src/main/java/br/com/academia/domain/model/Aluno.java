@@ -1,20 +1,28 @@
 package br.com.academia.domain.model;
 
-import lombok.Builder;
-import lombok.Data;
-import lombok.Getter;
+import lombok.*;
 
-import java.time.LocalDate;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Getter
-@Data
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Builder
 
+
+@Entity
+@Table(name = "ALUNO")
 public class Aluno {
 
-    private int codigoAluno;
-    private String nomeResponsavel;
-    private LocalDate dataCadastroAluno;
-    private String status;
+    @Id
+    @Column(name = "CODIGO")
+    private Integer codigoAluno;
+
+    @Column(name = "NOME")
+    private String nome;
 
 }

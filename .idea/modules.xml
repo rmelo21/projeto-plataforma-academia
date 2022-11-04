@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/plataforma-academia/app [academia]/academia.iml" filepath="$PROJECT_DIR$/plataforma-academia/app [academia]/academia.iml" />
       <module fileurl="file://$PROJECT_DIR$/plataforma-academia/app [academia]/academia-application/academia-application.iml" filepath="$PROJECT_DIR$/plataforma-academia/app [academia]/academia-application/academia-application.iml" />
       <module fileurl="file://$PROJECT_DIR$/plataforma-academia/app [academia]/academia-domain/academia-domain.iml" filepath="$PROJECT_DIR$/plataforma-academia/app [academia]/academia-domain/academia-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plataforma-academia/app [academia]/academia-events/academia-events.iml" filepath="$PROJECT_DIR$/plataforma-academia/app [academia]/academia-events/academia-events.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/projeto-plataforma-academia.iml" filepath="$PROJECT_DIR$/.idea/projeto-plataforma-academia.iml" />
     </modules>
   </component>
