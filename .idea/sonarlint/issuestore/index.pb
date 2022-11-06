@@ -25,17 +25,17 @@ qplataforma-academia/app [academia]/academia-domain/src/main/java/br/com/academi
 nplataforma-academia/app [academia]/academia-domain/src/main/java/br/com/academia/domain/model/FichaTreino.java,4\a\4a91a636fa1ca92e628d8f7451979c92c9d7b8bf
 £
 splataforma-academia/app [academia]/academia-domain/src/main/java/br/com/academia/domain/model/GerarVencimentos.java,f\c\fc8c20ee664283da694ab22f21299a4c60d26b15
-ù
-mplataforma-academia/app [academia]/academia-domain/src/main/java/br/com/academia/domain/enums/TipoStatus.java,b\3\b38ddae28724796b1ceb3b8d2b3d2a521509235d
 õ
 kplataforma-academia/app [academia]/academia-domain/src/main/java/br/com/academia/domain/model/Endereco.java,9\c\9cb0a46e4fe24675ed1e47d488a6e765120304e6
-ü
-oplataforma-academia/app [academia]/academia-domain/src/main/java/br/com/academia/domain/mapper/MapeiaAluno.java,1\f\1fc04d73964561ca490754c2cf4cfc687f4782a0
-©
-yplataforma-academia/app [academia]/academia-domain/src/main/java/br/com/academia/domain/ports/in/ProcessarEventoPort.java,a\e\aeac6ad4fcde1d8ea44472634349d358237fa4fb
-ò
-hplataforma-academia/app [academia]/academia-domain/src/main/java/br/com/academia/domain/model/Aluno.java,5\8\58b7cd048b1957313614d64c7d6a614bbc375f43
 °
 qplataforma-academia/app [academia]/academia-domain/src/main/java/br/com/academia/domain/service/ServiceAluno.java,2\9\29619e89640275e22cb3fc2b71417570cec0858d
+ß
+wplataforma-academia/app [academia]/academia-domain/src/main/java/br/com/academia/domain/repository/AlunoRepository.java,2\e\2e067fe981d2d51882bd56f51850161a13910385
+ù
+mplataforma-academia/app [academia]/academia-domain/src/main/java/br/com/academia/domain/enums/TipoStatus.java,b\3\b38ddae28724796b1ceb3b8d2b3d2a521509235d
+©
+yplataforma-academia/app [academia]/academia-domain/src/main/java/br/com/academia/domain/ports/in/ProcessarEventoPort.java,a\e\aeac6ad4fcde1d8ea44472634349d358237fa4fb
 ¢
 rplataforma-academia/app [academia]/academia-domain/src/main/java/br/com/academia/domain/validator/ValidaAluno.java,e\a\ea88850069ece3888d936c4c8a7e3f53c46c3cfe
+ü
+oplataforma-academia/app [academia]/academia-domain/src/main/java/br/com/academia/domain/mapper/MapeiaAluno.java,1\f\1fc04d73964561ca490754c2cf4cfc687f4782a0
