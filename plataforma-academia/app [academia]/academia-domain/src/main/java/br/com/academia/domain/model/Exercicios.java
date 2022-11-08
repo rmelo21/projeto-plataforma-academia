@@ -1,16 +1,28 @@
 package br.com.academia.domain.model;
 
-import lombok.Builder;
-import lombok.Data;
-import lombok.Getter;
+import lombok.*;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Getter
-@Data
 @Builder
+@AllArgsConstructor
+@NoArgsConstructor
 
+@Entity
+@Table(name = "EXERCICIOS")
 public class Exercicios {
 
+    @Id
+    @Column (name = "codigoExercicios")
     private int codigoExercicios;
+
+    @Column (name = "descricaoExercicios")
     private int descricaoExercicios;
+
+    @Column(name = "STATUS")
     private String status;
 }
