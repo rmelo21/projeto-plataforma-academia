@@ -12,27 +12,6 @@
 
     <artifactId>academia-application</artifactId>
 
-    <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
-    </properties>
-
-    <dependencies>
-
-        <dependency>
-            <groupId>br.com.academia</groupId>
-            <artifactId>academia-events</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-
-        <dependency>
-            <groupId>br.com.academia</groupId>
-            <artifactId>academia-domain</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-
-
-    </dependencies>
 
     <build>
         <plugins>
@@ -45,6 +24,22 @@
                     <outputDirectory>../target/</outputDirectory>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.10.1</version>
+                <configuration>
+                    <source>11</source>
+                    <target>11</target>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
+    <dependencies>
+        <dependency>
+            <groupId>jakarta.persistence</groupId>
+            <artifactId>jakarta.persistence-api</artifactId>
+            <version>2.2.3</version>
+        </dependency>
+    </dependencies>
 </project>

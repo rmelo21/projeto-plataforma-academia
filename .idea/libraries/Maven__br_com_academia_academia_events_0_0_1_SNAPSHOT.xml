@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Maven: br.com.academia:academia-events:0.0.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/br/com/academia/academia-events/0.0.1-SNAPSHOT/academia-events-0.0.1-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/plataforma-academia/app [academia]/academia-events/academia-events-0.0.1-SNAPSHOT-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/br/com/academia/academia-events/0.0.1-SNAPSHOT/academia-events-0.0.1-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/plataforma-academia/app [academia]/academia-events/academia-events-0.0.1-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/br/com/academia/academia-events/0.0.1-SNAPSHOT/academia-events-0.0.1-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
