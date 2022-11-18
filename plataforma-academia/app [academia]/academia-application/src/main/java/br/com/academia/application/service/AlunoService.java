@@ -24,6 +24,7 @@ public class AlunoService {
         this.alunoRepository = alunoRepository;
     }
 
+
     public Aluno cadastrarAluno(Aluno aluno) {
 
         return alunoRepository.save(aluno);

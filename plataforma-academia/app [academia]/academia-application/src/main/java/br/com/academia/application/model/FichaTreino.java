@@ -2,6 +2,7 @@ package br.com.academia.application.model;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
 
@@ -10,6 +11,8 @@ import java.time.LocalDate;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@Component
+
 
 @Entity
 @Table(name = "FICHATREINO")
@@ -18,7 +21,7 @@ public class FichaTreino {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "codigo_ficha_treino", nullable = false)
-    private Long codigoFichaTreino;
+    private Integer codigoFichaTreino;
 
     @Column(name = "numero_ficha", length = 4, nullable = false)
     private Integer numeroFicha;

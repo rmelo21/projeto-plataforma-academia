@@ -15,7 +15,3 @@ o
 ?plataforma-academia/app [academia]/academia-application/pom.xml,9\4\94ef5ca88a20860e2b6ed8ec1807eeab00b67e08
 Z
 *plataforma-academia/app [academia]/pom.xml,9\0\9024c6d00fb94da5f6e91ae82ca703b38fcd207d
-¥
-uplataforma-academia/app [academia]/academia-application/src/main/java/br/com/academia/application/model/Endereco.java,2\3\23961ed3028a5e73424741d0f70687cb1068cf77
-µ
-„plataforma-academia/app [academia]/academia-application/src/main/java/br/com/academia/application/repository/EnderecoRepository.java,c\1\c1f89558462018e38b1a306a23ba65607a3c1f07

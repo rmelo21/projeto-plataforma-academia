@@ -2,6 +2,7 @@ package br.com.academia.application.model;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.springframework.stereotype.Component;
 
 import java.sql.Time;
 import java.time.LocalDate;
@@ -11,6 +12,8 @@ import java.time.LocalDate;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@Component
+
 
 @Entity
 @Table(name = "MODALIDADEHORARIO")
@@ -19,7 +22,7 @@ public class ModalidadeHorario {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "codigo_modalidade_horario", nullable = false)
-    private Long codigoModalidadeHorario;
+    private Integer codigoModalidadeHorario;
 
     @Column(name = "dia_semana_modalidade_horario", length = 100)
     private String diaSemanaModalidadeHorario;

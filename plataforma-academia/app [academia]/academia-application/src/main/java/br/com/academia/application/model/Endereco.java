@@ -5,7 +5,6 @@ import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
 
-
 @Getter
 @Setter
 @Builder
@@ -21,7 +20,7 @@ public class Endereco {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "codigo_endereco", nullable = false)
-    private Long codigoEndereco;
+    private Integer codigoEndereco;
 
     @Column(name = "logradouro", length = 100, nullable = false)
     private String logradouro;

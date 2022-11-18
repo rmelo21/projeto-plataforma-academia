@@ -20,7 +20,7 @@ public class Aluno {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id", nullable = false)
+    @Column(name = "codigo_aluno", nullable = false)
     private Integer codigoAluno;
 
     @Column(name = "nome", length = 100, nullable = false)

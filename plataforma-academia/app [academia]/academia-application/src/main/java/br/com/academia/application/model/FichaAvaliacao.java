@@ -2,6 +2,7 @@ package br.com.academia.application.model;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -11,6 +12,8 @@ import java.time.LocalDate;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@Component
+
 
 @Entity
 @Table(name = "FICHAAVALIACAO")
@@ -20,7 +23,7 @@ public class FichaAvaliacao {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "codigo_ficha_avalilacao", nullable = false)
-    private Long codigoFichaAvalilacao;
+    private Integer codigoFichaAvalilacao;
 
     @Column(name = "peso", nullable = false, length = 3, precision = 4)
     private BigDecimal peso;
