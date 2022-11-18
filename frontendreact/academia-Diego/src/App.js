@@ -4,6 +4,7 @@ import { AuthProviver } from 'context/authContext';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 import { ToastContainer } from 'react-toastify';
+
   
 import 'react-toastify/dist/ReactToastify.css';
 import '@fontsource/roboto/300.css';
@@ -14,6 +15,7 @@ import '@fontsource/roboto/700.css';
 const theme = createTheme();
 
 function App() {
+
   return (
       <AuthProviver >
         <ThemeProvider theme={theme}>
