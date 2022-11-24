@@ -1,18 +1,16 @@
 # projeto-plataforma-academia  
 
-
 Aplicação tem por objetivo final realizar gestão de academias voltada para a modalidade de Musculação. Realizando cadastros e operações administrativas, operacionais e gerenciais. Além da rotina de pagamentos!  
- 
 
-**JAVA 11** 
-**SPRING BOOT** 
-**MAVEN** 
-**REACT** 
-**REACT ROUTER DOM** 
-**REACT TOASTIFY** 
+
+**JAVA 11**  
+**SPRING BOOT**  
+**MAVEN**  
+**REACT**  
+**REACT ROUTER DOM**  
+**REACT TOASTIFY**  
 **MySql** 
 
- 
  
 # Diretórios
 
@@ -49,10 +47,10 @@ Aplicação tem por objetivo final realizar gestão de academias voltada para a 
 # Imagens de algumas das telas que o sistema possui
 
  
-![img.png](img.png)
+![Login](img.png)
 
  
-![img_1.png](img_1.png)
+![Lista Cliente](img_1.png)
 
  
-![img_2.png](img_2.png)
+![Finaceiro](img_2.png)
