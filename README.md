@@ -45,4 +45,10 @@ MySql
 **Na pasta Documentação deixamos passos para instalação de algumas das tecnologias utilizadas neste projeto**
 
 
+# Imagens de algumas das telas que o sistema possui
+
 ![img.png](img.png)
+
+![img_1.png](img_1.png)
+
+![img_2.png](img_2.png)
