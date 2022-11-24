@@ -14,6 +14,6 @@ MySql
 
 # Diretórios
 
-** Aplicação contém Módulo único contendo os diretórios CONTROLLER, MODEL, REPOSITORY E SERVICE já implementados!
+*Aplicação contém Módulo único contendo os diretórios CONTROLLER, MODEL, REPOSITORY E SERVICE já implementados!* 
 
 # API Rest [EndPoints]
