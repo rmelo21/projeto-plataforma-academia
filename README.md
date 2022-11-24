@@ -22,9 +22,9 @@ Aplicação tem por objetivo final realizar gestão de academias voltada para a 
 
 # UML  
 
-![UML](Documentação/diagramas/projeto-plataforma-academia-UML.JPG)
- 
- 
+![UML](Documentação/diagramas/projeto-plataforma-academia-UML.JPG)  
+  
+
 # API Rest [EndPoints Raiz]  
   
 **@RequestMapping("/api/aluno")**  
@@ -54,10 +54,10 @@ Aplicação tem por objetivo final realizar gestão de academias voltada para a 
 # Imagens de algumas das telas que o sistema possui
   
   
-![Login](projeto-plataforma-academia\Documentação\telas\img.png)
+![Login](Documentação/telas/img.png)
   
   
-![Lista Cliente](projeto-plataforma-academia\Documentação\telas\img_1.png)
+![Lista Cliente](Documentação/telas/img_1.png)
   
   
-![Finaceiro](projeto-plataforma-academia\Documentação\telas)
+![Finaceiro](Documentação/telas/img_2.png)
