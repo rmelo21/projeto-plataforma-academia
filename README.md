@@ -22,7 +22,7 @@ Aplicação tem por objetivo final realizar gestão de academias voltada para a 
 
 # UML  
 
-![UML](projeto-plataforma-academia\Documentação\diagramas\projeto-plataforma-academia-UML)
+![UML](projeto-plataforma-academia-UML)
  
  
 # API Rest [EndPoints Raiz]  
