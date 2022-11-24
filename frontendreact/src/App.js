@@ -1,24 +1,41 @@
-import React from "react";
-import LoginPage from "./pages/LoginPage";
-import HeaderMenu from "./pages/HeaderMenu";
-import StudentRegister from "./pages/StudentRegister";
-import WorkerRegister from "./pages/WorkerRegister";
+import Navigation from "navigation";
+import CssBaseline from '@mui/material/CssBaseline';
+import { AuthProviver } from 'context/authContext';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
-// class App extends React.Component {
-//   render() {
-//     return (
+import { ToastContainer } from 'react-toastify';
 
-//     );
-//   }
-// }
+  
+import 'react-toastify/dist/ReactToastify.css';
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
 
-export default function App(props) {
+const theme = createTheme();
+
+function App() {
+
   return (
-    <div>
-      <LoginPage />
-      <HeaderMenu />
-      <StudentRegister />
-      <WorkerRegister />
-    </div>
-  );
-};
+      <AuthProviver >
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
+          <ToastContainer 
+            position="bottom-center"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="light"
+          />
+          <Navigation />
+        </ThemeProvider>
+      </AuthProviver>
+  )
+}
+
+export default App
