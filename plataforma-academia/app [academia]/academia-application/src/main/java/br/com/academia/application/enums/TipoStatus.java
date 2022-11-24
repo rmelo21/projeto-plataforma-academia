@@ -7,7 +7,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public enum TipoStatus {
 
-    CANCELADO("C", "1"),
+//    CANCELADO("C", "1"),
     INATIVO("I", "2"),
     ATIVO("A", "3");
 
