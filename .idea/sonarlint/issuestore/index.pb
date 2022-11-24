@@ -9,8 +9,6 @@ U
 %frontendreact/src/pages/HeaderMenu.js,1\a\1a6466616b2e7990478d307a931042e2a40275a7
 o
 ?plataforma-academia/app [academia]/academia-application/pom.xml,9\4\94ef5ca88a20860e2b6ed8ec1807eeab00b67e08
-Z
-*plataforma-academia/app [academia]/pom.xml,9\0\9024c6d00fb94da5f6e91ae82ca703b38fcd207d
 ™
 zplataforma-academia/app [academia]/academia-application/src/main/java/br/com/academia/application/AcademiaApplication.java,d\1\d19a0074c9ae4128cf2b43c769bfceac661eb496
 µ
@@ -63,8 +61,6 @@ zplataforma-academia/app [academia]/academia-application/src/main/java/br/com/ac
 Åplataforma-academia/app [academia]/academia-application/src/main/java/br/com/academia/application/repository/AlunoRepository.java,a\2\a2270a8391dbc837454b198579c1c3b58628be01
 ∑
 Üplataforma-academia/app [academia]/academia-application/src/main/java/br/com/academia/application/repository/ExerciciosRepository.java,0\d\0d0cbbeda74c566dcca3ef2457cc0a99a539370e
-≤
-Åplataforma-academia/app [academia]/academia-application/src/main/java/br/com/academia/application/controller/AlunoController.java,2\d\2dd60b4386f73513b1a1ae98a219e5beb91430d3
 ∑
 Üplataforma-academia/app [academia]/academia-application/src/main/java/br/com/academia/application/controller/ExerciciosController.java,d\e\de528fed69ad2fd1f3f1b1ea33037c458485012d
 ´
@@ -75,8 +71,6 @@ zplataforma-academia/app [academia]/academia-application/src/main/java/br/com/ac
 åplataforma-academia/app [academia]/academia-application/src/main/java/br/com/academia/application/controller/GerarVencimentosController.java,3\2\322c14544825b7937d2c869894605d6120540021
 ∑
 Üplataforma-academia/app [academia]/academia-application/src/main/java/br/com/academia/application/service/GerarVencimentosService.java,b\7\b79f91c155c777f0cf92f15b76818fc8fc5f9c57
-ª
-äplataforma-academia/app [academia]/academia-application/src/main/java/br/com/academia/application/controller/FichaAvaliacaoController.java,c\e\ce8ef221b3237cff3de3e114a4e33b2b763fe9da
 µ
 Ñplataforma-academia/app [academia]/academia-application/src/main/java/br/com/academia/application/service/FichaAvaliacaoService.java,7\a\7abd9d31d8ce9731551edf9531b1a27638e6d039
 ª
@@ -101,8 +95,6 @@ zplataforma-academia/app [academia]/academia-application/src/main/java/br/com/ac
 åplataforma-academia/app [academia]/academia-application/src/main/java/br/com/academia/application/controller/SeriesExerciciosController.java,7\7\77105a15ee6598bf319c9ecbad16efd7d821e463
 µ
 Ñplataforma-academia/app [academia]/academia-application/src/main/java/br/com/academia/application/controller/TelefoneController.java,2\0\2094f9503c5c090d5e4e8084aadd13a16b7e9935
-µ
-Ñplataforma-academia/app [academia]/academia-application/src/main/java/br/com/academia/application/controller/EnderecoController.java,c\e\ced9c3485a432859ba825b67a95ea7c396196b95
 ß
 wplataforma-academia/app [academia]/academia-application/src/main/java/br/com/academia/application/enums/TipoStatus.java,9\c\9c0c514966d4b60301c812d3ce3c9620e2be583d
 ©
