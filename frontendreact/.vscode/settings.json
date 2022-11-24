@@ -1,0 +1,12 @@
+{
+    "editor.formatOnSave": true,
+    "prettier.requireConfig": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#13332E",
+        "titleBar.activeBackground": "#19423B",
+        "titleBar.activeForeground": "#F6FBFB"
+    }
+}
