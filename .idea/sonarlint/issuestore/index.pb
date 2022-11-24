@@ -117,3 +117,21 @@ xplataforma-academia/app [academia]/academia-application/src/main/java/br/com/ac
 }plataforma-academia/app [academia]/academia-application/src/main/java/br/com/academia/application/model/GerarVencimentos.java,4\3\435537519191dd1279ee67a8d50481be9431f962
 ¬
 |plataforma-academia/app [academia]/academia-application/src/main/java/br/com/academia/application/model/GrupoExercicios.java,2\2\221f496e4dad1ac76d223734d4ab6ade0968ed2d
+«
+{plataforma-academia/app [academia]/academia-application/src/main/java/br/com/academia/application/model/HistoricoGeral.java,4\9\4973e3b636215d1c088efbd990223256dfd4d298
+¦
+vplataforma-academia/app [academia]/academia-application/src/main/java/br/com/academia/application/model/Matricula.java,1\0\10860dfb3e8330f76ab54eb69b12e70d154a1dac
+§
+wplataforma-academia/app [academia]/academia-application/src/main/java/br/com/academia/application/model/Modalidade.java,d\e\de2f0779d10730aaf29a08f400ba890ede5346ad
+®
+~plataforma-academia/app [academia]/academia-application/src/main/java/br/com/academia/application/model/ModalidadeHorario.java,e\2\e2b0221f83f4f1bb5b7fa400368f19ffae9c56a2
+¢
+rplataforma-academia/app [academia]/academia-application/src/main/java/br/com/academia/application/model/Aluno.java,a\5\a514e53c339e8456f2eae2691e064711e01b9060
+¥
+uplataforma-academia/app [academia]/academia-application/src/main/java/br/com/academia/application/model/Endereco.java,2\3\23961ed3028a5e73424741d0f70687cb1068cf77
+§
+wplataforma-academia/app [academia]/academia-application/src/main/java/br/com/academia/application/model/Exercicios.java,9\4\94adc1361ce8a025c8c5b011e8fd7e3360d27785
+«
+{plataforma-academia/app [academia]/academia-application/src/main/java/br/com/academia/application/model/FichaAvaliacao.java,4\d\4d36be77c213af34d67086849b4461fdddbd833a
+£
+splataforma-academia/app [academia]/academia-application/src/main/java/br/com/academia/application/model/Pessoa.java,b\6\b63866a74fb0fb5dacc68d63210b287029e4e147
