@@ -53,10 +53,10 @@ public class FichaAvaliacaoService {
 
     }
 
-    public FichaAvaliacao pesquisarPorCodigoFichaAvaliacao (Integer codigoFichaAvaliacao) {
+    public FichaAvaliacao pesquisarPorCodigoFichaAvaliacao (Integer codigoFichaAvalilacao) {
 
         return fichaAvaliacaoRepository
-                .findById(codigoFichaAvaliacao)
+                .findById(codigoFichaAvalilacao)
                 .orElseThrow( () ->
                         new ResponseStatusException(HttpStatus.NOT_FOUND, "FichaAvaliacao não enconrado")
                 );

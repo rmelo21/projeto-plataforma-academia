@@ -1,6 +1,5 @@
 package br.com.academia.application.controller;
 
-import br.com.academia.application.model.pessoa;
 import br.com.academia.application.model.Pessoa;
 import br.com.academia.application.repository.PessoaRepository;
 import br.com.academia.application.service.PessoaService;
@@ -34,7 +33,7 @@ public class PessoaController {
 
     }
 
-    @DeleteMapping("/deletar/{codigopessoa}")
+    @DeleteMapping("/deletar/{codigoPessoa}")
     @ResponseStatus(HttpStatus.OK)
     public void deletaPessoaPorCodigo(@PathVariable Integer codigoPessoa) {
 
@@ -42,7 +41,7 @@ public class PessoaController {
 
     }
 
-    @PutMapping("/atualizarporcodigo/{codigopessoa}")
+    @PutMapping("/atualizarporcodigo/{codigoPessoa}")
     @ResponseBody
     public ResponseEntity atualizaCadastroPessoa (@RequestBody Pessoa pessoa,
                                                  @PathVariable Integer codigoPessoa) {
@@ -61,7 +60,7 @@ public class PessoaController {
 
     }
 
-    @GetMapping("pesquisar/{codigopessoa}")
+    @GetMapping("pesquisar/{codigoPessoa}")
     public Pessoa pesquisaPorCodigo(@PathVariable Integer codigoPessoa) {
 
         return pessoaService.pesquisarPorCodigoPessoa(codigoPessoa);

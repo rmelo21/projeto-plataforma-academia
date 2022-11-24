@@ -1,10 +1,10 @@
 package br.com.academia.application.model;
 
+
 import lombok.*;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
-
 
 @Getter
 @Setter
@@ -12,7 +12,6 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Component
-
 
 @Entity
 @Table(name = "ALUNO")
@@ -25,6 +24,10 @@ public class Aluno {
 
     @Column(name = "nome", length = 100, nullable = false)
     private String nome;
+
+    @Builder.Default
+    @Column(name = "status", length = 1, nullable = false)
+    private String status = "A";
 
 }
 

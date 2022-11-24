@@ -1,7 +1,6 @@
 package br.com.academia.application.controller;
 
 import br.com.academia.application.model.Telefone;
-import br.com.academia.application.model.Telefone;
 import br.com.academia.application.repository.TelefoneRepository;
 import br.com.academia.application.service.TelefoneService;
 import org.springframework.http.HttpStatus;

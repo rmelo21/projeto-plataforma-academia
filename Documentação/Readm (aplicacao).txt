@@ -1,5 +1,0 @@
-1 ) Prototipação das telas do sistema (protótipo de alta e/ou baixa fidelidade)
-2 ) Diagrama e Descritivo de use case (Caso de uso)
-3 ) Se desenvolverem utilizando Orientação a Objeto - Diagrama de Classe
-4 ) MER/DER
-5 ) Descrição textual de como o sistema vai funcionar.

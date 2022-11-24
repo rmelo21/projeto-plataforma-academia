@@ -1,6 +1,5 @@
 package br.com.academia.application.controller;
 
-import br.com.academia.application.model.modalidadeHorario;
 import br.com.academia.application.model.ModalidadeHorario;
 import br.com.academia.application.repository.ModalidadeHorarioRepository;
 import br.com.academia.application.service.ModalidadeHorarioService;
@@ -34,7 +33,7 @@ public class ModalidadeHorarioController {
 
     }
 
-    @DeleteMapping("/deletar/{codigomodalidadehorario}")
+    @DeleteMapping("/deletar/{codigoModalidadeHorario}")
     @ResponseStatus(HttpStatus.OK)
     public void deletaModalidadeHorarioPorCodigo(@PathVariable Integer codigoModalidadeHorario) {
 
@@ -42,7 +41,7 @@ public class ModalidadeHorarioController {
 
     }
 
-    @PutMapping("/atualizarporcodigo/{codigomodalidadeHorario}")
+    @PutMapping("/atualizarporcodigo/{codigoModalidadeHorario}")
     @ResponseBody
     public ResponseEntity atualizaCadastroModalidadeHorario (@RequestBody ModalidadeHorario modalidadeHorario,
                                                  @PathVariable Integer codigoModalidadeHorario) {
@@ -61,7 +60,7 @@ public class ModalidadeHorarioController {
 
     }
 
-    @GetMapping("pesquisar/{codigomodalidadehorario}")
+    @GetMapping("pesquisar/{codigoModalidadeHorario}")
     public ModalidadeHorario pesquisaPorCodigo(@PathVariable Integer codigoModalidadeHorario) {
 
         return modalidadeHorarioService.pesquisarPorCodigoModalidadeHorario(codigoModalidadeHorario);

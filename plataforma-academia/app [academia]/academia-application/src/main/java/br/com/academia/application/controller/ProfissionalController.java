@@ -1,6 +1,5 @@
 package br.com.academia.application.controller;
 
-import br.com.academia.application.model.profissional;
 import br.com.academia.application.model.Profissional;
 import br.com.academia.application.repository.ProfissionalRepository;
 import br.com.academia.application.service.ProfissionalService;
@@ -34,7 +33,7 @@ public class ProfissionalController {
 
     }
 
-    @DeleteMapping("/deletar/{codigoprofissional}")
+    @DeleteMapping("/deletar/{codigoProfissional}")
     @ResponseStatus(HttpStatus.OK)
     public void deletaProfissionalPorCodigo(@PathVariable Integer codigoProfissional) {
 
@@ -42,7 +41,7 @@ public class ProfissionalController {
 
     }
 
-    @PutMapping("/atualizarporcodigo/{codigoprofissional}")
+    @PutMapping("/atualizarporcodigo/{codigoProfissional}")
     @ResponseBody
     public ResponseEntity atualizaCadastroProfissional (@RequestBody Profissional profissional,
                                                  @PathVariable Integer codigoProfissional) {
@@ -61,7 +60,7 @@ public class ProfissionalController {
 
     }
 
-    @GetMapping("pesquisar/{codigoprofissional}")
+    @GetMapping("pesquisar/{codigoProfissional}")
     public Profissional pesquisaPorCodigo(@PathVariable Integer codigoProfissional) {
 
         return profissionalService.pesquisarPorCodigoProfissional(codigoProfissional);

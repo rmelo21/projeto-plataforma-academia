@@ -1,8 +1,11 @@
 package br.com.academia.application.model;
 
-import jakarta.persistence.*;
+
 import lombok.*;
 import org.springframework.stereotype.Component;
+
+import javax.persistence.*;
+import java.time.LocalDate;
 
 @Getter
 @Setter
@@ -21,8 +24,13 @@ public class Exercicios {
     private Integer codigoExercicios;
 
     @Column(name = "descricao_exercicios", length = 40, nullable = false)
-    private Integer descricaoExercicios;
+    private String descricaoExercicios;
 
+    @Builder.Default
+    @Column(name = "data_cadastro", nullable = false)
+    private LocalDate dataCadastro = LocalDate.now();
+
+    @Builder.Default
     @Column(name = "status", length = 1, nullable = false)
-    private String status;
+    private String status = "A";
 }

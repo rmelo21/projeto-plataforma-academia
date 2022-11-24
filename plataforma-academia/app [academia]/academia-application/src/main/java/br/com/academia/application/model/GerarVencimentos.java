@@ -1,8 +1,10 @@
 package br.com.academia.application.model;
 
-import jakarta.persistence.*;
+
 import lombok.*;
 import org.springframework.stereotype.Component;
+
+import javax.persistence.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -40,7 +42,8 @@ public class GerarVencimentos {
     @Column(name = "data_cadastro_gerar_vencimentos", nullable = false)
     private LocalDate dataCadastroGerarVencimentos = LocalDate.now();
 
+    @Builder.Default
     @Column(name = "status", length = 1, nullable = false)
-    private String status;
+    private String status = "A";
 
 }

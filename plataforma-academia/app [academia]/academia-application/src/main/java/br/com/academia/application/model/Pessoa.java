@@ -1,8 +1,10 @@
 package br.com.academia.application.model;
 
-import jakarta.persistence.*;
+
 import lombok.*;
 import org.springframework.stereotype.Component;
+
+import javax.persistence.*;
 
 import java.time.LocalDate;
 import java.util.Date;
@@ -39,10 +41,12 @@ public class Pessoa {
     @Column(name = "data_nascimento", nullable = false)
     private Date dataNascimento;
 
+    @Builder.Default
     @Column(name = "data_cadastro", nullable = false)
-    private LocalDate dataCadastro;
+    private LocalDate dataCadastro = LocalDate.now();
 
-    @Column(name = "status", nullable = false, length = 1)
-    private String status;
+    @Builder.Default
+    @Column(name = "status", length = 1, nullable = false)
+    private String status = "A";
 
 }

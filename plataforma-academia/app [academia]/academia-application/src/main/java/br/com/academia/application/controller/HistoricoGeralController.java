@@ -1,6 +1,5 @@
 package br.com.academia.application.controller;
 
-import br.com.academia.application.model.historicoGeral;
 import br.com.academia.application.model.HistoricoGeral;
 import br.com.academia.application.repository.HistoricoGeralRepository;
 import br.com.academia.application.service.HistoricoGeralService;
@@ -34,7 +33,7 @@ public class HistoricoGeralController {
 
     }
 
-    @DeleteMapping("/deletar/{codigohistoricoGeral}")
+    @DeleteMapping("/deletar/{codigoHistoricoGeral}")
     @ResponseStatus(HttpStatus.OK)
     public void deletaHistoricoGeralPorCodigo(@PathVariable Integer codigoHistoricoGeral) {
 
@@ -42,7 +41,7 @@ public class HistoricoGeralController {
 
     }
 
-    @PutMapping("/atualizarporcodigo/{codigohistoricoGeral}")
+    @PutMapping("/atualizarporcodigo/{codigoHistoricoGeral}")
     @ResponseBody
     public ResponseEntity atualizaCadastroHistoricoGeral (@RequestBody HistoricoGeral historicoGeral,
                                                  @PathVariable Integer codigoHistoricoGeral) {
@@ -61,7 +60,7 @@ public class HistoricoGeralController {
 
     }
 
-    @GetMapping("pesquisar/{codigohistoricoGeral}")
+    @GetMapping("pesquisar/{codigoHistoricoGeral}")
     public HistoricoGeral pesquisaPorCodigo(@PathVariable Integer codigoHistoricoGeral) {
 
         return historicoGeralService.pesquisarPorCodigoHistoricoGeral(codigoHistoricoGeral);

@@ -1,8 +1,10 @@
 package br.com.academia.application.model;
 
-import jakarta.persistence.*;
+
 import lombok.*;
 import org.springframework.stereotype.Component;
+
+import javax.persistence.*;
 
 @Getter
 @Setter
@@ -33,7 +35,8 @@ public class SeriesExercicios {
     @Column(name = "observacao", length = 100)
     private String observacao;
 
-    @Column(name = "status", nullable = false, length = 1)
-    private String status;
+    @Builder.Default
+    @Column(name = "status", length = 1, nullable = false)
+    private String status = "A";
 
 }

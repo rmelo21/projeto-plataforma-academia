@@ -28,6 +28,7 @@ public class Endereco {
     @Column(name = "numero", length = 4, nullable = false)
     private Integer numero;
 
+    @Builder.Default
     @Column(name = "status", length = 1, nullable = false)
-    private String status;
+    private String status = "A";
 }

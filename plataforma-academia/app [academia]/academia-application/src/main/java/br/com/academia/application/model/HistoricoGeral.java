@@ -1,8 +1,10 @@
 package br.com.academia.application.model;
 
-import jakarta.persistence.*;
+
 import lombok.*;
 import org.springframework.stereotype.Component;
+
+import javax.persistence.*;
 
 import java.time.LocalDate;
 
@@ -98,6 +100,7 @@ public class HistoricoGeral {
     @Column(name = "anotacoes_gerais_historico_geral", nullable = false, length = 200)
     private String anotacoesGeraisHistoricoGeral;
 
+    @Builder.Default
     @Column(name = "data_cadastro_historico_geral", nullable = false)
-    private LocalDate dataCadastroHistoricoGeral;
+    private LocalDate dataCadastroHistoricoGeral = LocalDate.now();
 }

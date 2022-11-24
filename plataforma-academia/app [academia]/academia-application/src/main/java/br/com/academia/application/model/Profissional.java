@@ -1,8 +1,10 @@
 package br.com.academia.application.model;
 
-import jakarta.persistence.*;
+
 import lombok.*;
 import org.springframework.stereotype.Component;
+
+import javax.persistence.*;
 
 import java.time.LocalDate;
 
@@ -38,6 +40,7 @@ public class Profissional {
     @Column(name = "data_demissao")
     private LocalDate dataDemissao;
 
-    @Column(name = "status", nullable = false, length = 1)
-    private String status;
+    @Builder.Default
+    @Column(name = "status", length = 1, nullable = false)
+    private String status = "A";
 }

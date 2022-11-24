@@ -1,8 +1,10 @@
 package br.com.academia.application.model;
 
-import jakarta.persistence.*;
+
 import lombok.*;
 import org.springframework.stereotype.Component;
+
+import javax.persistence.*;
 
 import java.time.LocalDate;
 
@@ -26,10 +28,15 @@ public class FichaTreino {
     @Column(name = "numero_ficha", length = 4, nullable = false)
     private Integer numeroFicha;
 
+    @Builder.Default
     @Column(name = "data_cadastro_ficha_freino", nullable = false)
-    private LocalDate dataCadastroFichaTreino;
+    private LocalDate dataCadastroFichaTreino = LocalDate.now();
 
     @Column(name = "anotacoes_gerais_ficha_treino", length = 200)
     private String anotacoesGeraisFichaTreino;
+
+    @Builder.Default
+    @Column(name = "status", length = 1, nullable = false)
+    private String status = "A";
 
 }

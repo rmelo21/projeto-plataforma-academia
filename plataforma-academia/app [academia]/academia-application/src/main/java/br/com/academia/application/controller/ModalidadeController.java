@@ -1,6 +1,5 @@
 package br.com.academia.application.controller;
 
-import br.com.academia.application.model.modalidade;
 import br.com.academia.application.model.Modalidade;
 import br.com.academia.application.repository.ModalidadeRepository;
 import br.com.academia.application.service.ModalidadeService;
@@ -34,7 +33,7 @@ public class ModalidadeController {
 
     }
 
-    @DeleteMapping("/deletar/{codigomodalidade}")
+    @DeleteMapping("/deletar/{codigoModalidade}")
     @ResponseStatus(HttpStatus.OK)
     public void deletaModalidadePorCodigo(@PathVariable Integer codigoModalidade) {
 
@@ -42,7 +41,7 @@ public class ModalidadeController {
 
     }
 
-    @PutMapping("/atualizarporcodigo/{codigomodalidade}")
+    @PutMapping("/atualizarporcodigo/{codigoModalidade}")
     @ResponseBody
     public ResponseEntity atualizaCadastroModalidade (@RequestBody Modalidade modalidade,
                                                  @PathVariable Integer codigoModalidade) {
@@ -61,7 +60,7 @@ public class ModalidadeController {
 
     }
 
-    @GetMapping("pesquisar/{codigomodalidade}")
+    @GetMapping("pesquisar/{codigoModalidade}")
     public Modalidade pesquisaPorCodigo(@PathVariable Integer codigoModalidade) {
 
         return modalidadeService.pesquisarPorCodigoModalidade(codigoModalidade);

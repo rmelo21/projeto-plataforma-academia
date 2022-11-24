@@ -2,7 +2,6 @@ package br.com.academia.application.controller;
 
 
 import br.com.academia.application.model.FichaAvaliacao;
-import br.com.academia.application.model.FichaAvaliacao;
 import br.com.academia.application.repository.FichaAvaliacaoRepository;
 import br.com.academia.application.service.FichaAvaliacaoService;
 import org.springframework.http.HttpStatus;
@@ -35,7 +34,7 @@ public class FichaAvaliacaoController {
 
     }
 
-    @DeleteMapping("/deletar/{codigofichaavaliacao}")
+    @DeleteMapping("/deletar/{codigoFichaAvalilacao}")
     @ResponseStatus(HttpStatus.OK)
     public void deletaFichaAvaliacaoPorCodigo(@PathVariable Integer codigofichaAvaliacao) {
 
@@ -43,7 +42,7 @@ public class FichaAvaliacaoController {
 
     }
 
-    @PutMapping("/atualizarporcodigo/{codigofichaavaliacao}")
+    @PutMapping("/atualizarporcodigo/{codigoFichaAvalilacao}")
     @ResponseBody
     public ResponseEntity atualizaCadastroFichaAvaliacao (@RequestBody FichaAvaliacao fichaAvaliacao,
                                                  @PathVariable Integer codigofichaAvaliacao) {
@@ -62,10 +61,10 @@ public class FichaAvaliacaoController {
 
     }
 
-    @GetMapping("pesquisar/{codigofichaavaliacao}")
-    public FichaAvaliacao pesquisaPorCodigo(@PathVariable Integer codigofichaAvaliacao) {
+    @GetMapping("pesquisar/{codigoFichaAvalilacao}")
+    public FichaAvaliacao pesquisaPorCodigo(@PathVariable Integer codigoFichaAvalilacao) {
 
-        return fichaAvaliacaoService.pesquisarPorCodigoFichaAvaliacao(codigofichaAvaliacao);
+        return fichaAvaliacaoService.pesquisarPorCodigoFichaAvaliacao(codigoFichaAvalilacao);
 
     }
 

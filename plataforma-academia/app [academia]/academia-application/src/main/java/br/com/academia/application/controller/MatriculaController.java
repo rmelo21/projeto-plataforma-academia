@@ -1,6 +1,5 @@
 package br.com.academia.application.controller;
 
-import br.com.academia.application.model.matricula;
 import br.com.academia.application.model.Matricula;
 import br.com.academia.application.repository.MatriculaRepository;
 import br.com.academia.application.service.MatriculaService;
@@ -34,7 +33,7 @@ public class MatriculaController {
 
     }
 
-    @DeleteMapping("/deletar/{codigomatricula}")
+    @DeleteMapping("/deletar/{codigoMatricula}")
     @ResponseStatus(HttpStatus.OK)
     public void deletaMatriculaPorCodigo(@PathVariable Integer codigoMatricula) {
 
@@ -42,7 +41,7 @@ public class MatriculaController {
 
     }
 
-    @PutMapping("/atualizarporcodigo/{codigomatricula}")
+    @PutMapping("/atualizarporcodigo/{codigoMatricula}")
     @ResponseBody
     public ResponseEntity atualizaCadastroMatricula (@RequestBody Matricula matricula,
                                                  @PathVariable Integer codigoMatricula) {
@@ -61,7 +60,7 @@ public class MatriculaController {
 
     }
 
-    @GetMapping("pesquisar/{codigomatricula}")
+    @GetMapping("pesquisar/{codigoMatricula}")
     public Matricula pesquisaPorCodigo(@PathVariable Integer codigoMatricula) {
 
         return matriculaService.pesquisarPorCodigoMatricula(codigoMatricula);

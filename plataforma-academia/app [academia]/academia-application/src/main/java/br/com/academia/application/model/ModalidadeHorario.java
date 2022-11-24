@@ -1,8 +1,10 @@
 package br.com.academia.application.model;
 
-import jakarta.persistence.*;
+
 import lombok.*;
 import org.springframework.stereotype.Component;
+
+import javax.persistence.*;
 
 import java.sql.Time;
 import java.time.LocalDate;
@@ -33,10 +35,12 @@ public class ModalidadeHorario {
     @Column(name = "hora_fim_modalidade_horario")
     private Time horaFimModalidadeHorario;
 
+    @Builder.Default
     @Column(name = "data_cadastro_modalidade_horario")
-    private LocalDate dataCadastroModalidadeHorario;
+    private LocalDate dataCadastroModalidadeHorario = LocalDate.now();
 
-    @Column(name = "status", nullable = false, length = 1)
-    private String status;
+    @Builder.Default
+    @Column(name = "status", length = 1, nullable = false)
+    private String status = "A";
 
 }

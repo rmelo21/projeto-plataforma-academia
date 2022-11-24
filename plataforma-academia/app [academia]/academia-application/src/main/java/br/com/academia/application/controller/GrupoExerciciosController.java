@@ -1,6 +1,5 @@
 package br.com.academia.application.controller;
 
-import br.com.academia.application.model.grupoExercicios;
 import br.com.academia.application.model.GrupoExercicios;
 import br.com.academia.application.repository.GrupoExerciciosRepository;
 import br.com.academia.application.service.GrupoExerciciosService;
@@ -34,7 +33,7 @@ public class GrupoExerciciosController {
 
     }
 
-    @DeleteMapping("/deletar/{codigogrupoexercicios}")
+    @DeleteMapping("/deletar/{codigoGrupoExercicios}")
     @ResponseStatus(HttpStatus.OK)
     public void deletaGrupoExerciciosPorCodigo(@PathVariable Integer codigoGrupoExercicios) {
 
@@ -42,7 +41,7 @@ public class GrupoExerciciosController {
 
     }
 
-    @PutMapping("/atualizarporcodigo/{codigogrupoexercicios}")
+    @PutMapping("/atualizarporcodigo/{codigoGrupoExercicios}")
     @ResponseBody
     public ResponseEntity atualizaCadastroGrupoExercicios (@RequestBody GrupoExercicios grupoExercicios,
                                                  @PathVariable Integer codigoGrupoExercicios) {
@@ -61,7 +60,7 @@ public class GrupoExerciciosController {
 
     }
 
-    @GetMapping("pesquisar/{codigogrupoExercicios}")
+    @GetMapping("pesquisar/{codigoGrupoExercicios}")
     public GrupoExercicios pesquisaPorCodigo(@PathVariable Integer codigoGrupoExercicios) {
 
         return grupoExerciciosService.pesquisarPorCodigoGrupoExercicios(codigoGrupoExercicios);

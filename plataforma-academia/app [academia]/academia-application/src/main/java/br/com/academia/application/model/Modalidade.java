@@ -1,11 +1,10 @@
 package br.com.academia.application.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+
 import lombok.*;
 import org.springframework.stereotype.Component;
+
+import javax.persistence.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -35,10 +34,12 @@ public class Modalidade {
     @Column(name = "valor_modalidade", nullable = false, length = 10, precision = 2)
     private BigDecimal valorModalidade;
 
+    @Builder.Default
     @Column(name = "data_cadastro_modalidade", nullable = false)
-    private LocalDate dataCadastroModalidade;
+    private LocalDate dataCadastroModalidade = LocalDate.now();
 
-    @Column(name = "status", nullable = false, length = 1)
-    private String status;
+    @Builder.Default
+    @Column(name = "status", length = 1, nullable = false)
+    private String status = "A";
 
 }

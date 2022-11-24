@@ -1,10 +1,11 @@
 package br.com.academia.application.model;
 
-import jakarta.persistence.*;
+
 import lombok.*;
 import org.springframework.stereotype.Component;
 
-import java.math.BigDecimal;
+import javax.persistence.*;
+
 import java.time.LocalDate;
 
 @Getter
@@ -25,73 +26,75 @@ public class FichaAvaliacao {
     @Column(name = "codigo_ficha_avalilacao", nullable = false)
     private Integer codigoFichaAvalilacao;
 
+    //TODO USANDO BIGDECIMAL AO PESQUISAR CADASTRO SALVO APRESENTA ERRO NO CONSOLE DO INTELLIJ (VALOR INVALIDO)
     @Column(name = "peso", nullable = false, length = 3, precision = 4)
-    private BigDecimal peso;
+    private double peso;
 
     @Column(name = "altura", nullable = false, length = 1, precision = 3)
-    private BigDecimal altura;
+    private double altura;
 
     @Column(name = "peito", length = 2, precision = 3)
-    private BigDecimal peito;
+    private double peito;
 
     @Column(name = "cintura", length = 2, precision = 3)
-    private BigDecimal cintura;
+    private double cintura;
 
     @Column(name = "quadril", length = 2, precision = 3)
-    private BigDecimal quadril;
+    private double quadril;
 
     @Column(name = "braco_dreito", length = 2, precision = 3)
-    private BigDecimal bracoDireito;
+    private double bracoDireito;
 
     @Column(name = "braco_esquerdo", length = 2, precision = 3)
-    private BigDecimal bracoEsquerdo;
+    private double bracoEsquerdo;
 
     @Column(name = "coxa_direita", length = 2, precision = 3)
-    private BigDecimal coxaDireita;
+    private double coxaDireita;
 
     @Column(name = "coxa_esquerda", length = 2, precision = 3)
-    private BigDecimal coxaEsquerda;
+    private double coxaEsquerda;
 
     @Column(name = "gemeos_direito", length = 2, precision = 3)
-    private BigDecimal gemeosDireito;
+    private double gemeosDireito;
 
     @Column(name = "gemoes_esquerdo", length = 2, precision = 3)
-    private BigDecimal gemoesEsquerdo;
+    private double gemoesEsquerdo;
 
     @Column(name = "antebraco_direito", length = 2, precision = 3)
-    private BigDecimal antebracoDireito;
+    private double antebracoDireito;
 
     @Column(name = "antebraco_esquerdo", length = 2, precision = 3)
-    private BigDecimal antebracoEsquerdo;
+    private double antebracoEsquerdo;
 
     @Column(name = "abdomen", length = 2, precision = 3)
-    private BigDecimal abdomen;
+    private double abdomen;
 
     @Column(name = "dobra_cutanea", length = 2, precision = 3)
-    private BigDecimal dobraCutanea;
+    private double dobraCutanea;
 
     @Column(name = "IMC", length = 3, precision = 3)
-    private BigDecimal imc;
+    private double imc;
 
-    @Column(name = "hipertrofia", length = 2, precision = 3)
+    @Column(name = "hipertrofia", length = 1)
     private String hipertrofia;
 
-    @Column(name = "condicional", length = 2, precision = 3)
+    @Column(name = "condicional", length = 1)
     private String condicional;
 
-    @Column(name = "definicao", length = 2, precision = 3)
+    @Column(name = "definicao", length = 1)
     private String definicao;
 
-    @Column(name = "reducao", length = 2, precision = 3)
+    @Column(name = "reducao", length = 1)
     private String reducao;
 
-    @Column(name = "descricao_objetivo", length = 2, precision = 3)
+    @Column(name = "descricao_objetivo", length = 100)
     private String descricaoObjetivo;
 
     @Column(name = "anotacoes_gerais_ficha_avaliacao", nullable = false, length = 100)
     private String anotacoesGeraisFichaAvaliacao;
 
+    @Builder.Default
     @Column(name = "data_cadastro_ficha_avaliacao", nullable = false)
-    private LocalDate dataCadastroFichaAvaliacao;
+    private LocalDate dataCadastroFichaAvaliacao = LocalDate.now();
 
 }
